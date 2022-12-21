@@ -18,9 +18,6 @@ import {
   configureFonts,
 } from 'react-native-paper';
 
-import FlatListImagesScreen from './Examples/FlatListImages';
-import MaterialBottomTabsScreen from './Examples/MaterialBottomTabs';
-import BottomNavigationExampleScreen from './Examples/BottomNavigationExample';
 
 import DrawerItems from './DrawerItems';
 
@@ -50,7 +47,11 @@ const DrawerContent = () => {
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const data = [
+import FlatListImagesScreen from './Examples/FlatListImages';
+import MaterialBottomTabsScreen from './Examples/MaterialBottomTabs';
+import BottomNavigationExampleScreen from './Examples/BottomNavigationExample';
+
+export const dataMainMenu = [
   { id: '1', title: 'Flatlist Images', url:'./Examples/FlatListImages', name: 'FlatlistImages', navigateTo: FlatListImagesScreen },
   { id: '2', title: 'Material Bottom Tabs', url:'./Examples/MaterialBottomTabs', name:'MaterialBottomTabs', navigateTo: MaterialBottomTabsScreen },
   ];
@@ -99,7 +100,7 @@ const BottomNavigationExampleStack = () => {
 }
 
 const cardStyleInterpolator = Platform.OS === 'android' ? CardStyleInterpolators.forFadeFromBottomAndroid : CardStyleInterpolators.forHorizontalIOS;
-   
+
 function MainMenu() {
   return (
     <NavigationContainer>
