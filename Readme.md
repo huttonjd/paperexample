@@ -6,17 +6,13 @@ This repo uses react expo
 I created this since callstack's github project did not run on machine just when I followed their instructions
 
 # Screen shots
-Main Screen | Drawer
-:-----------:|:-----------:
-![Main Screen](./screenshots/andriod/MainScreen.jpg) | ![Drawer](./screenshots/andriod/Drawer.jpg)
+Main Screen | Drawer | Flatlist Images
+:-----------:|:-----------:|:-----------: |
+![Main Screen](./screenshots/andriod/MainScreen.jpg) | ![Drawer](./screenshots/andriod/Drawer.jpg) | ![Flatlist Images](./screenshots/andriod/Flatlist%20Images.jpg) | !
 
-Flatlist | Bottom Navigation
-:-----------:|:-----------:
-![Flatlist Images](./screenshots/andriod/Flatlist%20Images.jpg) | ![Bottom Navigation](./screenshots/andriod/BottomNaviagation.jpg)
-
-Material Bottom Tabs | Empty
-:-----------:|:-----------:
-![Material Bottom Tabs](./screenshots/andriod/Material%20Bottom%20Tabs.jpg) | &nbsp;
+Bottom Navigation | Material Bottom Tabs | &nbsp;
+:-----------:|:-----------:|:-----------:
+![Bottom Navigation](./screenshots/andriod/BottomNaviagation.jpg) | ![Material Bottom Tabs](./screenshots/andriod/Material%20Bottom%20Tabs.jpg) | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 # Run this repo
 - Install [chocolatey](https://chocolatey.org/install)
