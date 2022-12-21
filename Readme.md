@@ -10,15 +10,27 @@ Example using [React Native Paper](https://callstack.github.io/react-native-pape
 
 ## Add Modules needed to run
 ```Shell
-yarn add react-native-paper
-yarn add react-native-safe-area-context
-yarn add react-native-vector-icons
+yarn add @expo/vector-icons
+yarn add @react-native-community/masked-view
+yarn add @react-navigation/bottom-tabs
 yarn add @react-navigation/drawer
+yarn add @react-navigation/elements
+yarn add @react-navigation/material-bottom-tabs
+yarn add @react-navigation/material-top-tabs
 yarn add @react-navigation/native
-yarn add react-native-reanimated@~2.12
+yarn add @react-navigation/native-stack
+yarn add @react-navigation/stack
+yarn add expo
+yarn add expo-status-bar
+yarn add react
+yarn add react-native
 yarn add react-native-gesture-handler
-yarn add typescript@^4.6.3 @types/react@~18.0.24 @types/react-native@~0.70.6
-yarn add expo-updates
+yarn add react-native-pager-view
+yarn add react-native-paper
+yarn add react-native-reanimated
+yarn add react-native-safe-area-context
+yarn add react-native-screens
+yarn add react-native-tab-view
 ```
 ## Update .\App.js 
 - open .\App.js
