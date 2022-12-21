@@ -30,7 +30,9 @@ function Notifications() {
 
 const Tab = createMaterialBottomTabNavigator();
 
-function MyTabs() {
+MaterialBottomTabs.title = 'Material Bottom Tabs';
+
+function MaterialBottomTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Feed"
@@ -72,8 +74,4 @@ function MyTabs() {
   );
 }
 
-export default function App() {
-  return (
-      <MyTabs />
-  );
-}
+export default MaterialBottomTabs;

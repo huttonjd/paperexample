@@ -19,7 +19,7 @@ export const mainExamples: Record<
 > = {
   flatListImages: FlatListImagesScreen,
   bottomNavigationExample: BottomNavigationExampleScreen,
-  
+  materialBottomTabs: MaterialBottomTabsScreen,
 };
 
 export const examples: Record<
