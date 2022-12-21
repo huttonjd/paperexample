@@ -1,67 +1,57 @@
-import React from "react";
-import {
-    StyleSheet,
-    SafeAreaView,
-    FlatList,
-    View,
-    Image,
-    TouchableOpacity
-} from "react-native";
+import React, { useState, useEffect  } from "react";
+import { StyleSheet, SafeAreaView, FlatList, View, Image, TouchableOpacity} from "react-native";
+import { Caption, List, Text, Chip, Divider } from 'react-native-paper';
+import { DataTableRow } from "react-native-paper/lib/typescript/components/DataTable/DataTableRow";
 
-export default class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-            refreshing: true,
-        }
-    }
+function  FlatListImages() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const URI = 'https://api.thedogapi.com/v1/images/search?limit=10&page=1';
 
-    componentDidMount() {
-        this.fetchDogs();
-    }
+  
+  const fetchData = async () => {
+    const resp = await fetch(URI);
+    const data = await resp.json();
+    setData(data);
+    setLoading(false);
+  };
 
-    fetchDogs() {
-        this.setState({ refreshing: true });
-        fetch('https://api.thedogapi.com/v1/images/search?limit=10&page=1')
-            .then(res => res.json())
-            .then(resJson => {
-                this.setState({ data: resJson });
-                this.setState({ refreshing: false });
-            }).catch(e => console.log(e));
-    }
+  
 
-    renderItemComponent = (data) =>
-        <TouchableOpacity style={styles.container}>
-            <Image style={styles.image} source={{ uri: data.item.url }} />
-        </TouchableOpacity>
+  const renderItem = ({ item }) => {
+    return (
+      <TouchableOpacity style={styles.container}>
+        <Image style={styles.image} source={{ uri: item.url }} />
+      </TouchableOpacity>
+      );
+  };
 
-    ItemSeparator = () => <View style={{
-        height: 2,
-        backgroundColor: "rgba(0,0,0,0.5)",
-        marginLeft: 10,
-        marginRight: 10,
-    }}
-    />
+  const ItemSeparator = () => <View style={{
+    height: 2,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    marginLeft: 10,
+    marginRight: 10,
+  }}
+  />
 
-    handleRefresh = () => {
-        this.setState({ refreshing: false }, () => { this.fetchDogs() }); // call fetchDogs after setting the state
-    }
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-    render() {
-      return (
-        <SafeAreaView>
-          <FlatList
-            data={this.state.data}
-            renderItem={item => this.renderItemComponent(item)}
-            keyExtractor={item => item.id.toString()}
-            ItemSeparatorComponent={this.ItemSeparator}
-            refreshing={this.state.refreshing}
-            onRefresh={this.handleRefresh}
-          />
-        </SafeAreaView>)
-    }
+  return (
+      <FlatList
+        data={data}
+        renderItem={renderItem}
+        keyExtractor={item => item.id.toString()}
+        ItemSeparatorComponent={ItemSeparator}
+        //refreshing={refreshing}
+        //onRefresh={handleRefresh}
+      />
+    
+  );
 }
+
+FlatListImages.title = 'FlatList Images';
 
 const styles = StyleSheet.create({
   container: {
@@ -75,3 +65,5 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
 });
+
+export default FlatListImages;
