@@ -1,6 +1,11 @@
 # React Native PaperExample
 Example using [React Native Paper](https://callstack.github.io/react-native-paper/index.html)
 
+# Install React
+```Shell
+npm install -g expo-cli
+```
+
 # Step to create this
 - open Administrator __nodejs__ command promopt
 - cd < parent location to store code >
@@ -11,6 +16,7 @@ Example using [React Native Paper](https://callstack.github.io/react-native-pape
 ## Add Modules needed to run
 ```Shell
 yarn add @expo/vector-icons
+yarn add react-navigation
 yarn add @react-native-community/masked-view
 yarn add @react-navigation/bottom-tabs
 yarn add @react-navigation/drawer

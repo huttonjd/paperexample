@@ -1,81 +1,147 @@
-import * as React from 'react';
-import { Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Divider, List } from 'react-native-paper';   
+import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { CardStyleInterpolators,  createStackNavigator,} from '@react-navigation/stack';
+import {
+  Provider as PaperProvider,
+  MD3DarkTheme,
+  MD3LightTheme,
+  MD2DarkTheme,
+  MD2LightTheme,
+  MD2Theme,
+  MD3Theme,
+  useTheme,
+  adaptNavigationTheme,
+  configureFonts,
+} from 'react-native-paper';
 
-function Feed() {
+import FlatListImagesScreen from './Examples/FlatListImages';
+import MaterialBottomTabsScreen from './Examples/MaterialBottomTabs';
+import BottomNavigationExampleScreen from './Examples/BottomNavigationExample';
+
+import DrawerItems from './DrawerItems';
+
+export const PreferencesContext = React.createContext<any>(null);
+export const useExampleTheme = () => useTheme<MD2Theme | MD3Theme>();
+
+const DrawerContent = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed!</Text>
-    </View>
+    <PreferencesContext.Consumer>
+      {(preferences) => (
+        <DrawerItems
+          toggleTheme={preferences.toggleTheme}
+          toggleRTL={preferences.toggleRtl}
+          toggleThemeVersion={preferences.toggleThemeVersion}
+          toggleCollapsed={preferences.toggleCollapsed}
+          toggleCustomFont={preferences.toggleCustomFont}
+          customFontLoaded={preferences.customFontLoaded}
+          collapsed={preferences.collapsed}
+          isRTL={preferences.rtl}
+          isDarkTheme={preferences.theme.dark}
+        />
+      )}
+    </PreferencesContext.Consumer>
+  );
+};
+
+const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
+
+const data = [
+  { id: '1', title: 'Flatlist Images', url:'./Examples/FlatListImages', name: 'FlatlistImages', navigateTo: FlatListImagesScreen },
+  { id: '2', title: 'Material Bottom Tabs', url:'./Examples/MaterialBottomTabs', name:'MaterialBottomTabs', navigateTo: MaterialBottomTabsScreen },
+  ];
+
+const FlatListImagesStack = () => {
+  return (
+      <Stack.Navigator
+        initialRouteName="FlatlistImages"
+        screenOptions={{headerShown: false}}
+      >
+        <Stack.Screen
+          name="FlatlistImages"
+          component={FlatListImagesScreen}
+        />
+      </Stack.Navigator>
   );
 }
 
-function Profile() {
+const MaterialBottomTabsStack = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
-    </View>
+      <Stack.Navigator
+        initialRouteName="MaterialBottomTabs"
+        screenOptions={{headerShown: false}}
+      >
+        <Stack.Screen
+          name="MaterialBottomTabs"
+          component={MaterialBottomTabsScreen}
+        />
+      </Stack.Navigator>
   );
 }
 
-function Notifications() {
+
+const BottomNavigationExampleStack = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications!</Text>
-    </View>
+      <Stack.Navigator
+        initialRouteName="BottomNavigationExampleScreen"
+        screenOptions={{headerShown: false}}
+      >
+        <Stack.Screen
+          name="BottomNavigationExampleScreen"
+          component={BottomNavigationExampleScreen}
+        />
+      </Stack.Navigator>
   );
 }
 
-const Tab = createMaterialBottomTabNavigator();
-
-function MyTabs() {
-  return (
-    <Tab.Navigator
-      initialRouteName="Feed"
-      activeColor="#e91e63"
-      labelStyle={{ fontSize: 12 }}
-      style={{ backgroundColor: 'tomato' }}
-    >
-      <Tab.Screen
-        name="Feed"
-        component={Feed}
-        options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Notifications"
-        component={Notifications}
-        options={{
-          tabBarLabel: 'Updates',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-  );
-}
-
-export default function App() {
+const cardStyleInterpolator = Platform.OS === 'android' ? CardStyleInterpolators.forFadeFromBottomAndroid : CardStyleInterpolators.forHorizontalIOS;
+   
+function MainMenu() {
   return (
     <NavigationContainer>
-      <MyTabs />
+      <Drawer.Navigator
+        screenOptions={{
+          
+          drawerStyle: {
+            backgroundColor: '#c6cbef', //Set Drawer background
+            width: 250, //Set Drawer width
+          },
+          headerStyle: {
+            backgroundColor: '#f4511e', //Set Header color
+          },
+          headerTintColor: '#fff', //Set Header text color
+          headerTitleStyle: {
+            fontWeight: 'bold', //Set Header text style
+          }
+        }}>
+        <Drawer.Screen
+          name="FlatlistImages"
+          options={{
+            drawerLabel: 'Flatlist Images',
+            title: 'Flatlist Images'
+          }}
+          component={FlatListImagesStack} />
+        <Drawer.Screen
+          name="MaterialBottomTabs"
+          options={{
+            drawerLabel: 'Material Bottom Tabs',
+            title: 'Material Bottom Tabs'
+          }}
+          component={MaterialBottomTabsStack} />
+          <Drawer.Screen
+          name="BottomNavigationExample"
+          options={{
+            drawerLabel: 'Bottom Navigation',
+            title: 'Bottom Navigation'
+          }}
+          component={BottomNavigationExampleStack} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }
+
+export default MainMenu;
