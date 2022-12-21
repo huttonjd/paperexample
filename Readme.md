@@ -1,13 +1,40 @@
 # React Native PaperExample
 Example using [React Native Paper](https://callstack.github.io/react-native-paper/index.html)
 
-# Install React
-```Shell
-npm install -g expo-cli
-```
+This repo uses react expo
 
-# Step to create this
-- open Administrator __nodejs__ command promopt
+I created this since callstack's github project did not run on machine just when I followed their instructions
+
+# Run this repo
+- Install [chocolatey](https://chocolatey.org/install)
+- Install __NodeJS LTS__ via chocolatey
+- Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+- Setup [React Native Env](https://reactnative.dev/docs/environment-setup)
+- Download this repo [paperexample](https://github.com/huttonjd/paperexample)
+- open Administrator nodejs command window
+- cd to repo
+- To install needed packages run
+  - yarn install
+- On your cell install __Expo Go__ from Google play or Apple Store
+- NOTE: Your cellphone has to be on same network as you machine
+- To run repo use one of the following
+  - npm start
+    - or
+  - expo start -c
+- Scan barcode 
+  - Andriod: __Expo Go__ option
+  - Apple: Use camera app and select link when it comes up
+  
+# Runs on
+NodeJs - Windows 18.12.1
+
+chocolatey - 1.2.1
+
+Andriod Studio - Dolphin 2021.3.1 patch 1
+
+# Step to create this repo from scratch
+## Open nodejs command prompt 
+- open Administrator __nodejs__ command prompt
 - cd < parent location to store code >
 ## Create App 
 - npx create-expo-app paperexample
@@ -16,7 +43,7 @@ npm install -g expo-cli
 ## Add Modules needed to run
 ```Shell
 yarn add @expo/vector-icons
-yarn add react-navigation
+yarn add @react-native-async-storage/async-storage
 yarn add @react-native-community/masked-view
 yarn add @react-navigation/bottom-tabs
 yarn add @react-navigation/drawer
@@ -37,6 +64,7 @@ yarn add react-native-reanimated
 yarn add react-native-safe-area-context
 yarn add react-native-screens
 yarn add react-native-tab-view
+yarn add react-navigation
 ```
 ## Update .\App.js 
 - open .\App.js
@@ -46,12 +74,12 @@ import * as React from 'react';
 import { AppRegistry } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { name as appName } from './app.json';
-import App from './src/index';
+import MainMenu from './src/index';
 
 export default function Main() {
   return (
     <PaperProvider>
-      <App />
+      <MainMenu />
     </PaperProvider>
   );
 }
@@ -63,20 +91,15 @@ AppRegistry.registerComponent(appName, () => Main);
 - open .\bable.config.js
 - - replace it with the following and save
 ```javascript
-const path = require('path');
-
-const pak = require('./package.json');
-
-module.exports = function (api) {
+module.exports = function(api) {
   api.cache(true);
-
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['react-native-reanimated/plugin'],
+    plugins: ['react-native-paper/babel', 'react-native-reanimated/plugin'],
   };
 };
 ```
-
+## Copy src & util folder from this repo
 
 # To run
 npm start

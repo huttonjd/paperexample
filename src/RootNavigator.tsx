@@ -9,7 +9,7 @@ import {
 } from '@react-navigation/stack';
 import { Appbar } from 'react-native-paper';
 
-import ExampleList, { examples } from './ExampleList';
+import ExampleList, { examples } from './ExamplesMenu';
 
 const Stack = createStackNavigator();
 
