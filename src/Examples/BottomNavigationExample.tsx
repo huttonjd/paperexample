@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Dimensions, Easing, Image, Platform, StyleSheet,  View } from 'react-native';
+import { Dimensions, Easing, Image, Platform, StyleSheet, View } from 'react-native';
 
 import type { StackNavigationProp } from '@react-navigation/stack';
 import { Appbar, BottomNavigation, Menu } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useExampleTheme } from '..';
 import ScreenWrapper from '../ScreenWrapper';
 
 type RoutesState = Array<{
