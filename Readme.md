@@ -15,9 +15,9 @@ Bottom Navigation | Material Bottom Tabs | &nbsp;
 ![Bottom Navigation](./screenshots/andriod/BottomNaviagation.jpg) | ![Material Bottom Tabs](./screenshots/andriod/Material%20Bottom%20Tabs.jpg) | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 # Run this repo
-- Install [chocolatey](https://chocolatey.org/install)
+- Install [chocolatey](https://chocolatey.org/)
 - Install __NodeJS LTS__ via chocolatey
-- Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+- Install [yarn](https://classic.yarnpkg.com/)
 - Setup [React Native Env](https://reactnative.dev/docs/environment-setup)
 - Download this repo [paperexample](https://github.com/huttonjd/paperexample)
 - open Administrator nodejs command window
