@@ -14,26 +14,43 @@ Bottom Navigation | Material Bottom Tabs | &nbsp;
 :-----------:|:-----------:|:-----------:
 ![Bottom Navigation](./screenshots/andriod/BottomNaviagation.jpg) | ![Material Bottom Tabs](./screenshots/andriod/Material%20Bottom%20Tabs.jpg) | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
-# Run this repo
-- Install [chocolatey](https://chocolatey.org/)
-- Install __NodeJS LTS__ via chocolatey
-- Install [yarn](https://classic.yarnpkg.com/)
-- Setup [React Native Env](https://reactnative.dev/docs/environment-setup)
-- Download this repo [paperexample](https://github.com/huttonjd/paperexample)
-- open Administrator nodejs command window
-- cd to repo
-- To install needed packages run
-  - yarn install
-- On your cell install __Expo Go__ from Google play or Apple Store
-- NOTE: Your cellphone has to be on same network as you machine
-- To run repo use one of the following
-  - npm start
-    - or
-  - expo start -c
-- Scan barcode 
-  - Andriod: __Expo Go__ option
-  - Apple: Use camera app and select link when it comes up
+## Prerequisites
+
+- [Node.js > 12](https://nodejs.org) 
+- [nvm](https://github.com/nvm-sh/nvm)
+- [yarn](https://classic.yarnpkg.com/)
+- [Watchman](https://facebook.github.io/watchman)
+- [Android Studio and Android SDK](https://developer.android.com/studio)
+- [React Native Expo Go](https://reactnative.dev/docs/environment-setup)
   
+# Run this repo
+- Open Administrator nodejs command window
+- run following
+```Shell
+# Goto parent folder (ie where you store your code)
+cd <parent folder>
+
+# Download this repo [paperexample](https://github.com/huttonjd/paperexample)
+git clone https://github.com/huttonjd/paperexample
+
+# cd into repo
+cd paperexample
+ 
+# To install needed packages run
+yarn install
+
+# On your cell install __Expo Go__ from Google play or Apple Store
+# NOTE: Your cellphone has to be on same network as you machine
+# To run repo use one of the following
+npm start
+# or
+expo start -c
+
+# run code on cell by scanning barcode 
+# Andriod: __Expo Go__ option
+# Apple: Use camera app and select link when it comes up
+```
+
 # Runs on
 NodeJs - Windows 18.12.1
 
