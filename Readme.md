@@ -1,9 +1,13 @@
 # React Native PaperExample
-Example using [React Native Paper](https://callstack.github.io/react-native-paper/index.html)
+I created this since [callstack's GitHub repo](https://github.com/callstack/react-native-paper) did not run on machine just when I followed their [instructions](https://callstack.github.io/react-native-paper/index.html).
 
-This repo uses react expo
+I have fixed the errors that pervented callstack's GitHub project from working.
 
-I created this since callstack's github project did not run on machine just when I followed their instructions
+Examples taken from [React Native Paper examples](https://github.com/callstack/react-native-paper/tree/main/example)
+
+I added 2 more of my own
+- FlatListImagesExample
+- MaterialBottomTabsExample
 
 # Screen shots
 Main Screen | Drawer | Flatlist Images
