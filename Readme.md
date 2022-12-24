@@ -142,7 +142,11 @@ module.exports = function(api) {
   };
 };
 ```
-## Copy src & util folder from this repo
+## Copy followng foldersfrom this repo
+- assets
+- src
+- style
+- utils
 
 # To run
 npm start
