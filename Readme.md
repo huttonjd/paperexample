@@ -8,8 +8,8 @@ NOTE: I am still getting __Required cycle warnings__, but it still works.
 Examples taken from [React Native Paper examples](https://github.com/callstack/react-native-paper/tree/main/example)
 
 I added 2 more of my own
-- FlatList Images Example
-- Materia lBottom Tabs Example
+- FlatList Images
+- Material Bottom Tabs
 
 # Screen shots (Not all screens, just a few)
 Main Screen | Drawer | Bottom Navigation
@@ -75,7 +75,7 @@ NodeJs - 19.3.0\
 yarn - 1.22.19\
 npm - 9.2.0
 
-# Step to create this repo from scratch
+# Step to create this repo from scratch (Windows)
 ## Open nodejs command prompt 
 - open Administrator __nodejs__ command prompt
 - cd < parent location to store code >
