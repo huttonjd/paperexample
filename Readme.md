@@ -1,22 +1,23 @@
-# React Native PaperExample
+# A working React Native Paper Examples
 I created this since [callstack's GitHub repo](https://github.com/callstack/react-native-paper) did not run on machine just when I followed their [instructions](https://callstack.github.io/react-native-paper/index.html).
 
 I have fixed the errors that pervented callstack's GitHub project from working.
 
+NOTE: I am still getting __Required cycle warnings__, but it still works.
+
 Examples taken from [React Native Paper examples](https://github.com/callstack/react-native-paper/tree/main/example)
 
 I added 2 more of my own
-- FlatListImagesExample
-- MaterialBottomTabsExample
+- FlatList Images Example
+- Materia lBottom Tabs Example
 
 # Screen shots
-Main Screen | Drawer | Flatlist Images
-:-----------:|:-----------:|:-----------: |
-![Main Screen](./screenshots/andriod/MainScreen.jpg) | ![Drawer](./screenshots/andriod/Drawer.jpg) | ![Flatlist Images](./screenshots/andriod/Flatlist%20Images.jpg) | !
-
-Bottom Navigation | Material Bottom Tabs | &nbsp;
+Main Screen | Drawer | &nbsp;
 :-----------:|:-----------:|:-----------:
-![Bottom Navigation](./screenshots/andriod/BottomNaviagation.jpg) | ![Material Bottom Tabs](./screenshots/andriod/Material%20Bottom%20Tabs.jpg) | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<img src="./screenshots/andriod/MainScreen.jpg" height="400" /> | <img src="./screenshots/andriod/Drawer.jpg" height="400" /> | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+Bottom Navigation | Material Bottom Tabs | Flatlist Images
+<img src="./screenshots/andriod/BottomNaviagation.jpg" height="400" /> | <img src="./screenshots/andriod/Material%20Bottom%20Tabs.jpg" height="400" /> |<img src="./screenshots/andriod/Flatlist%20Images.jpg" height="400" /> |
+
 
 ## Prerequisites
 
