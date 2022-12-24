@@ -149,6 +149,6 @@ module.exports = function(api) {
 - utils
 
 # To run
-npm start
-or
+npm start\
+or\
 expo start -c
