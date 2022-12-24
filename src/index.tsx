@@ -29,7 +29,7 @@ import { SafeAreaInsetsContext } from 'react-native-safe-area-context';
 
 import { isWeb } from '../utils';
 import DrawerItems from './DrawerItems';
-import App from './RootNavigator';
+import RootNavigator from './RootNavigator';
 
 const PERSISTENCE_KEY = 'NAVIGATION_STATE';
 const PREFERENCES_KEY = 'APP_PREFERENCES';
@@ -226,7 +226,7 @@ export default function PaperExample() {
             }
           >
             {isWeb ? (
-              <App />
+              <RootNavigator />
             ) : (
               <SafeAreaInsetsContext.Consumer>
                 {(insets) => {
@@ -243,7 +243,7 @@ export default function PaperExample() {
                     >
                       <Drawer.Screen
                         name="Home"
-                        component={App}
+                        component={RootNavigator}
                         options={{ headerShown: false }}
                       />
                     </Drawer.Navigator>
