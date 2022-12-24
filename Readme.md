@@ -11,12 +11,12 @@ I added 2 more of my own
 - FlatList Images Example
 - Materia lBottom Tabs Example
 
-# Screen shots
-Main Screen | Drawer | &nbsp;
+# Screen shots (Not all screens, just a few)
+Main Screen | Drawer | Bottom Navigation
 :-----------:|:-----------:|:-----------:
-<img src="./screenshots/andriod/MainScreen.jpg" height="400" /> | <img src="./screenshots/andriod/Drawer.jpg" height="400" /> | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-Bottom Navigation | Material Bottom Tabs | Flatlist Images
-<img src="./screenshots/andriod/BottomNaviagation.jpg" height="400" /> | <img src="./screenshots/andriod/Material%20Bottom%20Tabs.jpg" height="400" /> |<img src="./screenshots/andriod/Flatlist%20Images.jpg" height="400" /> |
+<img src="./screenshots/andriod/MainScreen.jpg" height="400" /> | <img src="./screenshots/andriod/Drawer.jpg" height="400" /> | <img src="./screenshots/andriod/BottomNaviagation.jpg" height="400" />
+Material Bottom Tabs | Flatlist Images | &nbsp;
+<img src="./screenshots/andriod/Material%20Bottom%20Tabs.jpg" height="400" /> |<img src="./screenshots/andriod/Flatlist%20Images.jpg" height="400" /> | <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
 ## Prerequisites
