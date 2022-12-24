@@ -149,6 +149,8 @@ module.exports = function(api) {
 - utils
 
 # To run
+yarn start \
+or\
 npm start\
 or\
 expo start -c
