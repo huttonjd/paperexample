@@ -20,13 +20,15 @@ Bottom Navigation | Material Bottom Tabs | Flatlist Images
 
 
 ## Prerequisites
-
-- [Node.js > 12](https://nodejs.org) 
-- [nvm](https://github.com/nvm-sh/nvm)
+Required
 - [yarn](https://classic.yarnpkg.com/)
+- [Node.js > 12](https://nodejs.org) 
+- [React Native Expo Go](https://reactnative.dev/docs/environment-setup)
+  
+Optional
+- [nvm](https://github.com/nvm-sh/nvm)
 - [Watchman](https://facebook.github.io/watchman)
 - [Android Studio and Android SDK](https://developer.android.com/studio)
-- [React Native Expo Go](https://reactnative.dev/docs/environment-setup)
   
 # Run this repo
 - Open Administrator nodejs command window
@@ -56,12 +58,22 @@ expo start -c
 # Apple: Use camera app and select link when it comes up
 ```
 
-# Runs on
-NodeJs - Windows 18.12.1
-
-chocolatey - 1.2.1
-
+# Tested on
+## Windows 
+OS - Windows 11\
+NodeJs - 18.12.1\
+nvm - 1.1.10
+chocolatey - 1.2.1\
+yarn - 1.22.19 \
+expo-cli - 6.0.8 \
+npm - 9.2.0 \
 Andriod Studio - Dolphin 2021.3.1 patch 1
+
+## Mac iOS
+OS - Monterey\
+NodeJs - 19.3.0\
+yarn - 1.22.19\
+npm - 9.2.0
 
 # Step to create this repo from scratch
 ## Open nodejs command prompt 
