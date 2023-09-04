@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "paperexample",
+    "name": "My React Paper Examples",
     "slug": "paperexample",
-    "version": "1.0.0",
+    "description":" My React Naive Paper Examples",
+    "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/paper-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,16 +19,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "buildNumber": "5",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.johndhutton.paperexample"
     },
     "android": {
+      "versionCode": 5,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/android-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.johndhutton.paperexample"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/favorite.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e8e0e84-0c11-440c-ba03-2095a357bcd0"
+      }
     }
   }
 }

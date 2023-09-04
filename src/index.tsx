@@ -12,7 +12,7 @@ import {
 import { useFonts } from 'expo-font';
 import { useKeepAwake } from 'expo-keep-awake';
 import { StatusBar } from 'expo-status-bar';
-//import * as Updates from 'expo-updates';
+import * as Updates from 'expo-updates';
 import {
   Provider as PaperProvider,
   MD3DarkTheme,
@@ -150,7 +150,7 @@ export default function PaperExample() {
       if (I18nManager.getConstants().isRTL !== rtl) {
         I18nManager.forceRTL(rtl);
         if (!isWeb) {
-          //Updates.reloadAsync();
+          Updates.reloadAsync();
         }
       }
     };

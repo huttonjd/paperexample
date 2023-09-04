@@ -7,15 +7,17 @@ import {
   Badge,
   Drawer,
   MD2Colors,
+  MD2Theme,
   MD3Colors,
+  MD3Theme,
   Switch,
   Text,
   TouchableRipple,
+  useTheme,
 } from 'react-native-paper';
 
 import { isWeb } from '../utils';
 
-import { PreferencesContext, useExampleTheme } from './';
 
 type Props = {
   toggleTheme: () => void;
@@ -109,8 +111,10 @@ const DrawerItems = ({
   isDarkTheme,
 }: Props) => {
   const [drawerItemIndex, setDrawerItemIndex] = React.useState<number>(0);
+  const PreferencesContext = React.createContext<any>(null);
   const preferences = React.useContext(PreferencesContext);
-
+  const useExampleTheme = () => useTheme<MD2Theme | MD3Theme>();
+  
   const _setDrawerItem = (index: number) => setDrawerItemIndex(index);
 
   const { isV3, colors } = useExampleTheme();
