@@ -13,6 +13,16 @@
     "production": {}
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "../GooglePlay/api-8625956426047585738-924658-a4959f9be06b.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "huttonjd@hotmail.com",
+        "ascAppId": "1526963623",
+        "appleTeamId": "S3ZMZKP438"
+      }
+    }
   }
 }
