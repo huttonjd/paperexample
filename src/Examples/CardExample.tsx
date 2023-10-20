@@ -11,7 +11,7 @@ import {
   Text,
 } from 'react-native-paper';
 
-import { PreferencesContext, useExampleTheme } from '..';
+import { PreferencesContext, useExampleTheme } from '../GlobalIems';
 import { isWeb } from '../../utils';
 import ScreenWrapper from '../ScreenWrapper';
 

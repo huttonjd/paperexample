@@ -3,7 +3,7 @@ import { ActivityIndicator, Platform, StyleSheet, View } from 'react-native';
 
 import { Dialog, MD2Colors, MD3Colors, Portal } from 'react-native-paper';
 
-import { useExampleTheme } from '../..';
+import { useExampleTheme } from '../../GlobalIems';
 import { TextComponent } from './DialogTextComponent';
 
 const isIOS = Platform.OS === 'ios';

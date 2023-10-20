@@ -10,7 +10,7 @@ import {
   ProgressBarProps,
 } from 'react-native-paper';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import ScreenWrapper from '../ScreenWrapper';
 
 class ClassProgressBar extends React.Component {

@@ -5,7 +5,7 @@ import type { StackNavigationProp } from '@react-navigation/stack';
 import { Appbar, BottomNavigation, Menu } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import ScreenWrapper from '../ScreenWrapper';
 
 type RoutesState = Array<{

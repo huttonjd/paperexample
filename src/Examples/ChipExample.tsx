@@ -4,7 +4,7 @@ import { Image, StyleSheet, View } from 'react-native';
 import color from 'color';
 import { Chip, List, MD2Colors, MD3Colors, Snackbar } from 'react-native-paper';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import ScreenWrapper from '../ScreenWrapper';
 
 const ChipExample = () => {

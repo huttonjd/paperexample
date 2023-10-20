@@ -17,6 +17,7 @@ import {
 } from 'react-native-paper';
 
 import { isWeb } from '../utils';
+import { PreferencesContext } from './GlobalIems';
 
 
 type Props = {
@@ -111,8 +112,7 @@ const DrawerItems = ({
   isDarkTheme,
 }: Props) => {
   const [drawerItemIndex, setDrawerItemIndex] = React.useState<number>(0);
-  const PreferencesContext = React.createContext<any>(null);
-  const preferences = React.useContext(PreferencesContext);
+    const preferences = React.useContext(PreferencesContext);
   const useExampleTheme = () => useTheme<MD2Theme | MD3Theme>();
   
   const _setDrawerItem = (index: number) => setDrawerItemIndex(index);

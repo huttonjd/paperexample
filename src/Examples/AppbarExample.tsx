@@ -13,7 +13,7 @@ import {
 } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import { yellowA200 } from '../../styles/themes/v2/colors';
 import ScreenWrapper from '../ScreenWrapper';
 

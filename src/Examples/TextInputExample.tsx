@@ -16,7 +16,7 @@ import {
 } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import { inputReducer, State } from '../../utils';
 import ScreenWrapper from '../ScreenWrapper';
 

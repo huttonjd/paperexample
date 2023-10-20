@@ -53,9 +53,7 @@ import FlatListImagesExample from './Examples/FlatListImages';
 import MaterialBottomTabsExample from './Examples/MaterialBottomTabs';
 
 
-
-
-import { useExampleTheme } from '.';
+import { useExampleTheme } from './GlobalIems';
 
 //build up record
 export const mainExamples: Record<

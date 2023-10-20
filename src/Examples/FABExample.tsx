@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { FAB, Portal, Text } from 'react-native-paper';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import ScreenWrapper from '../ScreenWrapper';
 
 type FABVariant = 'primary' | 'secondary' | 'tertiary' | 'surface';

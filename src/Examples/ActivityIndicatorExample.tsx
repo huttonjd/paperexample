@@ -8,8 +8,8 @@ import {
   MD3Colors,
 } from 'react-native-paper';
 
-import { useExampleTheme } from '..';
 import ScreenWrapper from '../ScreenWrapper';
+import { useExampleTheme } from '../GlobalIems';
 
 const ActivityIndicatorExample = () => {
   const [animating, setAnimating] = React.useState<boolean>(true);

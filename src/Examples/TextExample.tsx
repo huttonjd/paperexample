@@ -10,7 +10,7 @@ import {
   Title,
 } from 'react-native-paper';
 
-import { useExampleTheme } from '..';
+import { useExampleTheme } from '../GlobalIems';
 import ScreenWrapper from '../ScreenWrapper';
 
 const TextExample = () => {
