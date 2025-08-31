@@ -54,11 +54,12 @@ const HomeTab = () => {
   );
 };
 
+// You should wrap your root navigator with NavigationContainer
 function ThemingWithReactNavigation() {
   return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="React Navigation" component={HomeTab} />
-    </Stack.Navigator>
+      <Stack.Navigator initialRouteName="HomeTabs">
+        <Stack.Screen name="HomeTabs" component={HomeTab} />
+      </Stack.Navigator>
   );
 }
 
