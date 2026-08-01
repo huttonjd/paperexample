@@ -3,7 +3,7 @@
     "name": "My React Paper Examples",
     "slug": "paperexample",
     "description": " My React Naive Paper Examples",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "orientation": "portrait",
     "icon": "./assets/images/paper-icon.png",
     "userInterfaceStyle": "light",
@@ -19,7 +19,7 @@
       "**/*"
     ],
     "ios": {
-      "buildNumber": "8",
+      "buildNumber": "9",
       "supportsTablet": true,
       "bundleIdentifier": "com.johndhutton.paperexample",
       "infoPlist": {
@@ -27,7 +27,7 @@
       }
     },
     "android": {
-      "versionCode": 8,
+      "versionCode": 9,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/android-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -41,6 +41,9 @@
       "eas": {
         "projectId": "0e8e0e84-0c11-440c-ba03-2095a357bcd0"
       }
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

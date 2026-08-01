@@ -229,6 +229,7 @@ export default function PaperExample() {
                   const collapsedDrawerWidth = 80 + Math.max(left, right);
                   return (
                     <Drawer.Navigator
+                      useLegacyImplementation={false}
                       screenOptions={{
                         drawerStyle: collapsed && {
                           width: collapsedDrawerWidth,
