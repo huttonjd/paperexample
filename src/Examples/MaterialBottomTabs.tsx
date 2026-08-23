@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 function Feed() {
@@ -28,7 +28,7 @@ function Notifications() {
   );
 }
 
-const Tab = createMaterialBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 MaterialBottomTabs.title = 'Material Bottom Tabs';
 
@@ -36,9 +36,11 @@ function MaterialBottomTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Feed"
-      activeColor="#e91e63"
-      labelStyle={{ fontSize: 12 }}
-      style={{ backgroundColor: 'tomato' }}
+      screenOptions={{
+        tabBarActiveTintColor: '#e91e63',
+        tabBarLabelStyle: { fontSize: 12 },
+        tabBarStyle: { backgroundColor: 'tomato' },
+      }}
     >
       <Tab.Screen
         name="Feed"

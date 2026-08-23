@@ -19,7 +19,7 @@
       "**/*"
     ],
     "ios": {
-      "buildNumber": "9",
+      "buildNumber": "10",
       "supportsTablet": true,
       "bundleIdentifier": "com.johndhutton.paperexample",
       "infoPlist": {
@@ -27,7 +27,7 @@
       }
     },
     "android": {
-      "versionCode": 9,
+      "versionCode": 10,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/android-icon.png",
         "backgroundColor": "#FFFFFF"
